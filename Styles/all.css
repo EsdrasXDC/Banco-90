@@ -1,0 +1,254 @@
+/* Reset e base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f3f3f3;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Header */
+.header {
+
+    background-color: #9b1c1c;
+    padding: 1rem 0;
+    color: white;
+
+
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Hero */
+.hero {
+    position: relative;
+    text-align: left;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-texto {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    background-color: rgba(248, 166, 52, 0.9);
+    /* fundo laranja com transparência */
+    padding: 2rem;
+    max-width: 450px;
+    color: black;
+    border-radius: 5px;
+}
+
+.hero-texto h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.hero-texto p {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Pagamento */
+.pagamento {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: white;
+}
+
+.pagamento h2 {
+    margin-bottom: 2rem;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.opcao {
+    background: #fff;
+    padding: 2rem;
+    border: 2px solid #ccc;
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+.opcao p {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Serviços */
+.servicos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem 1rem;
+    background-color: rgba(48, 39, 39, 255);
+    color: white;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.texto-servico {
+    flex: 1 1 300px;
+}
+
+.servicos img {
+    flex: 1 1 300px;
+    max-width: 400px;
+}
+
+/* Clientes */
+.clientes {
+    text-align: center;
+    padding: 3rem 1rem;
+    background: #fff;
+}
+
+.cards-clientes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.cards-clientes img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+/* Horários */
+.horarios {
+    padding: 3rem 1rem;
+    background: white;
+    text-align: center;
+}
+
+.horarios table {
+    width: 100%;
+    max-width: 800px;
+    margin: 2rem auto;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.horarios th,
+.horarios td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+.horarios thead th {
+    background-color: #b42b2b;
+    color: white;
+}
+
+.horarios tbody td:first-child {
+    font-weight: bold;
+    background-color: #f9f9f9;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #b42b2b;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+
+    .servicos {
+        flex-direction: column;
+    }
+
+    .hero-texto {
+        position: static;
+        background-color: #c87800;
+        padding: 1rem;
+        margin-top: -4px;
+    }
+}
